@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>华略 · International Meetings Made in China · 国际会议方案策划智库</title>
+<meta name="description" content="华略由梅晓丹（30年国际科技会议日程设计经验）与迟振华（30年招商引资经验）联合创立。1万元起策划国际会议。议题架构 · 嘉宾策略 · 议程编排 · 会议文案。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;500;700;900&family=ZCOOL+QingKe+HuangYou&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css?v=20260828">
+</head>
+<body id="top">
+<script>
+// 微信/移动端自动播放兜底：微信 WebView 不允许 autoplay，需显式 play()
+(function(){
+  function tryPlay(v){
+    var p = v.play();
+    if (p && p.catch) p.catch(function(){ v.muted = true; v.play().catch(function(){}); });
+  }
+  function init(){
+    document.querySelectorAll('video.hero-video').forEach(function(v){
+      tryPlay(v);
+      v.addEventListener('canplay', function(){ tryPlay(v); });
+      v.addEventListener('loadeddata', function(){ tryPlay(v); });
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+  // 微信特殊：页面可见性变化时重试
+  document.addEventListener('visibilitychange', function(){
+    if (!document.hidden) document.querySelectorAll('video.hero-video').forEach(tryPlay);
+  });
+  // 用户首次交互后强制解锁播放（iOS/安卓严格自动播放策略兜底）
+  function unlockPlay(){
+    document.querySelectorAll('video.hero-video').forEach(function(v){
+      if (v.paused) { v.muted = true; tryPlay(v); }
+    });
+  }
+  ['touchstart', 'click', 'scroll', 'keydown'].forEach(function(ev){
+    document.addEventListener(ev, unlockPlay, { once: true, passive: true });
+  });
+})();
+</script>
+<div class="topline"></div>
+<header class="nav">
+  <div class="container">
+    <a href="index.html" class="brand-block">
+      <img src="Hualue_logo3.jpg" alt="华略" class="nav-logo">
+      <span class="nav-tagline">Science · Tech · Innovation · Global Impact</span>
+    </a>
+    <div class="nav-slogan">你成功，<em>我骄傲！</em></div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">首页</a>
+      <a href="services.html">服务</a>
+      <a href="methodology.html">方法论</a>
+      <a href="case-gala.html">会议案例</a>
+      <a href="pricing.html">价格</a>
+      <a href="about.html">关于</a>
+      <a href="contact.html">联系</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="en/index.html" class="nav-lang" title="English">EN</a>
+      <a href="contact.html" class="nav-cta">预约咨询</a>
+    </div>
+    <button class="nav-burger" aria-label="菜单" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline webkit-playsinline="true" x5-playsinline="true" preload="none" poster="poster_v3.jpg">
+    <source src="hero_bg_v3.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-kicker">HUALUE · PLANNING CHINA · 国际会议方案策划智库</div>
+    <h1>让每一场国际会议，<br><span class="gold">值得被世界记住。</span></h1>
+    <p class="hero-sub">华略由 <strong>梅晓丹</strong>（30 年国际高端科技会议日程设计）与 <strong>迟振华</strong>（30 年政府招商引资）联合创立。我们专注会议策划的<strong>内核</strong>——议题架构 · 嘉宾策略 · 议程编排 · 会议文案。<strong>1 万元起</strong>，5–7 个工作日交付。</p>
+    <div class="hero-cta">
+      <a href="contact.html" class="btn btn-primary">预约 30 分钟咨询</a>
+      <span class="cta-divider"></span>
+      <a href="methodology.html" class="btn btn-gold">了解方法论</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 重点支持领域 · 视频下方独立板块 ===== -->
+<section class="hero-fields">
+  <div class="container">
+    <div class="fields-title">重点支持领域 · 23 大重点产业链群</div>
+    <div class="fields-subtitle">点击领域：全球现状 · 十五五定位 · 产业前景 · 核心难题 · 需求侧单位</div>
+    <div class="fields-grid">
+      <a href="ic-semiconductor.html" class="field-link">集成电路与半导体（光子）</a>
+      <a href="artificial-intelligence.html" class="field-link">人工智能</a>
+      <a href="quantum-tech.html" class="field-link">量子科技</a>
+      <a href="intelligent-nev.html" class="field-link">智能网联新能源汽车</a>
+      <a href="smart-devices.html" class="field-link">智能终端</a>
+      <a href="embodied-intelligence.html" class="field-link">具身智能（人形机器人）</a>
+      <a href="brain-computer-interface.html" class="field-link">脑机接口（脑科学）</a>
+      <a href="software-data.html" class="field-link">软件与数据</a>
+      <a href="advanced-materials.html" class="field-link">新材料</a>
+      <a href="spatiotemporal-info.html" class="field-link">时空信息（卫星互联网·北斗）</a>
+      <a href="power-grid.html" class="field-link">输配电</a>
+      <a href="energy-storage-hydrogen.html" class="field-link">新型储能与氢能（含新型电池）</a>
+      <a href="oil-gas.html" class="field-link">能源（油气）</a>
+      <a href="large-aircraft.html" class="field-link">大飞机</a>
+      <a href="low-altitude.html" class="field-link">低空装备</a>
+      <a href="commercial-space.html" class="field-link">商业航天（深空探索）</a>
+      <a href="commercial-vehicle.html" class="field-link">商用车</a>
+      <a href="6g.html" class="field-link">第六代移动通信（6G）</a>
+      <a href="fusion-energy.html" class="field-link">可控核聚变（核聚变能）</a>
+      <a href="deep-sea.html" class="field-link">深海深地极地</a>
+      <a href="biomedicine.html" class="field-link">生物医药（创新药·高端医疗器械）</a>
+      <a href="biomanufacturing.html" class="field-link">生物制造（合成生物）</a>
+      <a href="photovoltaic.html" class="field-link">光伏</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 信任数据条 ===== -->
+<div class="trust">
+  <div class="container" style="padding:0 0;">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-num">60<small>年</small></div>
+        <div class="trust-label">双人互补经验</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-num">30<small>年</small></div>
+        <div class="trust-label">国际会议日程设计</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-num">50<small>+ 位</small></div>
+        <div class="trust-label">诺奖大师同台合作</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-num">100<small> 大</small></div>
+        <div class="trust-label">会议品牌操盘</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-num">¥1<small>万起</small></div>
+        <div class="trust-label">策划国际会议</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 一页导览 ===== -->
+<section>
+  <div class="container">
+    <div class="section-tag">EXPLORE · 一页导览</div>
+    <h2>四大板块，<span class="gold">一键深入</span></h2>
+    <p class="section-lead">从 60 年经验出发，为您拆解国际会议策划的全部内核。</p>
+    <div class="entry-grid">
+      <a href="services.html" class="entry-card">
+        <div class="num">01</div>
+        <h3>核心服务</h3>
+        <p>议题框架 · 议程编排 · 嘉宾策略 · 会议文案 · 方案提案 · 国际议题——六项策划内核。</p>
+        <span class="more">了解服务</span>
+      </a>
+      <a href="methodology.html" class="entry-card">
+        <div class="num">02</div>
+        <h3>原创方法论</h3>
+        <p>八步骤五要素 · 工业5.0 · 三无六能九品四行 · AI 赋能——60 年经验沉淀为 4 套体系。</p>
+        <span class="more">探索方法论</span>
+      </a>
+      <a href="case-gala.html" class="entry-card">
+        <div class="num">03</div>
+        <h3>案例作品</h3>
+        <p>国际基因节 · 南京创新周 · 新药年会 · 世界级大会矩阵——30 年操盘实绩。</p>
+        <span class="more">查看案例</span>
+      </a>
+      <a href="about.html" class="entry-card">
+        <div class="num">04</div>
+        <h3>团队档案</h3>
+        <p>梅晓丹 × 迟振华——两位 30 年经验合伙人，业界 + 政企双背景的罕见组合。</p>
+        <span class="more">认识我们</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 为什么选择华略 ===== -->
+<section>
+  <div class="container">
+    <div class="section-tag">WHY · 为什么选择华略</div>
+    <h2>会议的灵魂在内容，<br>而内容策划是<span class="gold">最不可外包</span>的一环</h2>
+    <p class="section-lead">场地可以租，设备可以买，嘉宾可以请——唯独内容无法外包。华略专注策划内核，把 60 年经验用在最关键的地方。</p>
+    <div class="highlight-grid">
+      <div class="highlight-card">
+        <div class="dot">◆</div>
+        <h4>60 年双人互补经验</h4>
+        <p>梅晓丹 30 年国际科技会议日程设计 + 迟振华 30 年政府招商引资——业界 × 政企双背景，市场上没有第二家。</p>
+      </div>
+      <div class="highlight-card">
+        <div class="dot">◆</div>
+        <h4>1 万元起 · 5–7 个工作日交付</h4>
+        <p>强大的情报收集能力和科技前沿把握，60 年经验沉淀在方法论库中，边际成本极低——便宜不等于差。</p>
+      </div>
+      <div class="highlight-card">
+        <div class="dot">◆</div>
+        <h4>只做内核 · 边界清晰</h4>
+        <p>华略不做现场执行，100% 聚焦策划方案质量。执行方由主办方自选（推荐格物泰克），权责分明。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 精选案例 ===== -->
+<section id="why">
+  <div class="container">
+    <div class="section-tag">CASES · 精选案例</div>
+    <h2>从诺奖同台，到城市名片</h2>
+    <p class="section-lead">30 年操盘国际会议议题架构、嘉宾策略、议程编排——以下会议品牌的背后，都有华略的策划内核。</p>
+    <div class="cases-strip">
+      <div class="case-strip-card">
+        <div class="n">10<small style="font-size:18px;color:var(--gold);"> 位</small></div>
+        <h4>国际基因节</h4>
+        <p>诺奖得主同台受聘西安高新区，打造城市"基因名片"。</p>
+      </div>
+      <div class="case-strip-card">
+        <div class="n">30<small style="font-size:18px;color:var(--gold);">+</small></div>
+        <h4>国际新药发明科技年会</h4>
+        <p>年度药物创新风向标，产学研资本同场对话。</p>
+      </div>
+      <div class="case-strip-card">
+        <div class="n">5<small style="font-size:18px;color:var(--gold);"> 大洲</small></div>
+        <h4>世界级大会矩阵</h4>
+        <p>世界癌症 · 海洋 · 骨科大会，全球议题策划。</p>
+      </div>
+    </div>
+    <p style="margin-top:24px;"><a href="case-gala.html" style="color:var(--gold); font-size:13px; letter-spacing:2px; border-bottom:1px solid var(--gold); padding-bottom:3px;">查看全部会议 →</a></p>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <div>
+      <div class="cta-title">下一场值得被记住的会议，<br>从<span class="gold">一个议题</span>开始。</div>
+      <div class="cta-sub">30 分钟免费咨询——告诉我们您的会议目标、规模与时间，我们给出议题方向与策划思路。</div>
+    </div>
+    <a href="contact.html" class="btn btn-primary" style="font-size:15px; padding:16px 40px;">预约 30 分钟咨询</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div>
+          <div class="newsletter-title">订阅华略会议策划资讯</div>
+          <div class="newsletter-sub">每月 1–2 篇原创方法论与行业洞察——国际会议策划 · 议题设计 · 议程编排，直达您的邮箱。</div>
+        </div>
+        <form class="newsletter-form" onsubmit="alert('订阅功能即将上线，敬请期待。'); return false;">
+          <input type="email" placeholder="输入您的邮箱地址" required>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <img src="Hualue_logo3.jpg" alt="华略" class="footer-logo">
+        <div class="footer-brand">华略（International Meetings Made in China / China Planner）——国际会议方案策划智库。梅晓丹 + 迟振华，60 年双人经验，为中国国际会议注入灵魂。</div>
+        <div class="footer-social">
+          <a href="mailto:maggie@vivameeting.com" aria-label="邮箱"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg></a>
+          <a href="#" aria-label="微信" onclick="return false;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 4c-3.3 0-6 2.2-6 5 0 1.6.8 3 2 3.9L4 15l2.3-1.2c.8.2 1.7.3 2.7.3"/><path d="M15 9c-3 0-5.5 2-5.5 4.5 0 2.4 2.4 4.4 5.5 4.4.9 0 1.7-.1 2.4-.4L20 19l-.5-2.1c1.2-.9 2-2.2 2-3.9C21.5 11 19 9 15 9z"/></svg></a>
+          <a href="#" aria-label="领英" onclick="return false;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 11v5M8 8v.01M12 16v-5M12 12.5c0-1 .8-1.5 2-1.5s2 .5 2 1.5V16"/></svg></a>
+          <a href="#" aria-label="X" onclick="return false;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>SERVICES · 服务</h5>
+        <a href="services.html">议题框架设计</a>
+        <a href="services.html">议程编排</a>
+        <a href="services.html">嘉宾邀请策略</a>
+        <a href="services.html">会议文案</a>
+        <a href="services.html">方案提案书</a>
+        <a href="services.html">国际会议议题设计</a>
+      </div>
+      <div class="footer-col">
+        <h5>SOLUTIONS · 解决方案</h5>
+        <div class="group-label">By Industry · 按行业</div>
+        <a href="contact.html">政府招商会议</a>
+        <a href="contact.html">医药科技峰会</a>
+        <a href="contact.html">学术学会年会</a>
+        <a href="contact.html">企业品牌大会</a>
+        <div class="group-label">By Format · 按形式</div>
+        <a href="contact.html">国际峰会</a>
+        <a href="contact.html">行业论坛</a>
+        <a href="contact.html">出国科技招商会</a>
+      </div>
+      <div class="footer-col">
+        <h5>RESOURCES · 资源</h5>
+        <a href="methodology.html">原创方法论</a>
+        <a href="cases.html">案例作品</a>
+        <a href="index.html#why">国际会议意义</a>
+        <a href="services.html#process">服务流程</a>
+      </div>
+      <div class="footer-col">
+        <h5>COMPANY · 公司</h5>
+        <a href="about.html">关于华略</a>
+        <a href="about.html#team">团队</a>
+        <a href="about.html#model">合作模式</a>
+        <a href="contact.html">加入我们</a>
+      </div>
+      <div class="footer-col">
+        <h5>CONTACT · 联系</h5>
+        <a href="contact.html">预约 30 分钟咨询</a>
+        <a href="mailto:maggie@vivameeting.com">发送邮件</a>
+        <a href="contact.html">商务咨询 · 研究合作</a>
+        <a href="contact.html">公司信息</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 华略 · Support International Meetings Made in China Events</span>
+      <span class="gold">国际会议方案策划智库 · 不做现场执行</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
